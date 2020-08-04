@@ -19,10 +19,69 @@
     <meta name="twitter:description" content="Página web sobre semana3-ejercicio1 - codiGO">
     <meta property="twitter:image" content="https://picsum.photos/200/300">
     
+    <script>
+        window.twttr = (function(d,s,id)
+        {
+            var js,
+            fjs = d.getElementByTagName(s)[0],
+            t = windows.twttr || {};
+
+            if(d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f)
+            {
+                t._e.push(f);
+            }
+
+            return t;
+        })
+        (document, "script","twitter-wjs");
+    </script>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div id="fb-root"></div>
+    <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v4.0&appId=1009709955762555&autoLogAppEvents=1"></script>
+
+    <div class="wrapper">
+        <ul class="list-social">
+            <li>
+                <a class="twitter-share-button" 
+                   href="https://twitter.com/intent/tweet"
+                   data-size="large"
+                   data-text="Pagina web sobre portafolio de Carlos Rios, Creado en conjunto en el programa codiGO"
+                   data-url="https://github.com/riossuarezcarlos/semana3-ejercicio1.git"
+                   data-hashtags="codiGO, frontend"
+                   data-via="carlosriossuarez"
+                   data-related="frontend, codiGO"
+                   >
+                    Tweet
+                </a>
+            </li>
+            <li>
+                <div
+                class="fb-share-button"
+                data-href="https://github.com/riossuarezcarlos/semana3-ejercicio1.git"
+                data-layout="button_count"
+                data-size="large"
+                >
+                    <a target="_blank"
+                       href="https://www.facebook.com/sharer.php?u=https://github.com/riossuarezcarlos/semana3-ejercicio1.git;src=sdkpreparse"
+                       class="fb-xfbml-parse-ignore">
+                        Compartir
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
 </body>
 </html>

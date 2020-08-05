@@ -23,8 +23,8 @@
         window.twttr = (function(d,s,id)
         {
             var js,
-            fjs = d.getElementByTagName(s)[0],
-            t = windows.twttr || {};
+            fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
 
             if(d.getElementById(id)) return t;
             js = d.createElement(s);
@@ -54,7 +54,8 @@
     <div class="wrapper">
         <ul class="list-social">
             <li>
-                <a class="twitter-share-button" 
+                <a 
+                   class="twitter-share-button"
                    href="https://twitter.com/intent/tweet"
                    data-size="large"
                    data-text="Pagina web sobre portafolio de Carlos Rios, Creado en conjunto en el programa codiGO"
